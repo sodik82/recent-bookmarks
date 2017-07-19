@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Recent Bookmarks Extension Options</title></head>
+	<link href="css/cupertino/jquery-ui-1.9.1.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.8.2.js"></script> 
+	<script src="js/jquery-ui-1.9.1.custom.js"></script>
+	<script src="settings.js"></script> 
+	<script src="options.js"></script> 
+<body>
+<h1> Recent Bookmarks Extension </h1>
+<p>
+This extension shows list of recent bookmarks or allows to search for them. The bookmarks are opened either in new tab or in the currently selected tab depending on the configuration. 
+You can use CTRL key to override this option.
+</p>
+<p>
+You can use keybord to choose the desired bookmark and open it with the ENTER key.
+</p>
+<hr>
+<h1> Options </h1>
+<div>
+Bookmark open mode:
+<select id="openMode">
+ <option value="newTab"> Bookmark opens in new tab</option>
+ <option value="selectedTab">Bookmark opens in the selected tab</option>
+</select>
+</div>
+<div>
+Recent bookmarks count:
+<input type="text" id="count" value="10"/>
+</div>
+<div>
+Bookmark items' background color: <input id="itemBG" type="color" value="#DDDDFF"/> 
+</div>
+<button id="saveButton">Save</button>
+<div id = "status"> </div>
+</body>
+</html>

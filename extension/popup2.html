@@ -1,79 +1,80 @@
 <!doctype html>
 <html lang="us">
 <head>
-	<meta charset="utf-8">
-	<title>Recent bookmarks</title>
-	<link href="css/cupertino/jquery-ui-1.9.1.custom.css" rel="stylesheet">
-	<style>
-		body {
-			width: 250px;
-		}
-		#search {
-			width: 240px;
-		}
-		#wrapper {
-			position: relative;
-			padding-top: 2em;
-		}
-		#searchLine {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-		}
-		#pane {
-			max-height: 30em;
-			overflow-x: hidden;
-			overflow-y: auto;
-		}
-		#templates {
-			display: none;
-		}
-		a {
-			text-decoration: none;
-			font-weight: bold;
-			color : blue;
-		}
-		.action {
-			float: right;
-			width: 16px;
-			height: 16px;
-		}
-		.line {
-			padding: 0px 3px 0px 3px; 
-			border: 2px solid #CCCCFF;
-			border-radius:10px;
-		}
-		.selected {
-			border:2px solid blue;
-		}
-		div.bookmark {
-			margin-right : 16px;
-			white-space : nowrap;
-			overflow: hidden;		
-			text-overflow: ellipsis;
-		}
-	</style>
-	<script src="js/jquery-1.8.2.js"></script>
-	<script src="js/jquery-ui-1.9.1.custom.js"></script>
-	<script src="settings.js"></script>
-	<script src="popup2.js"></script>
+  <meta charset="utf-8">
+  <title>Recent bookmarks</title>
+  <link href="css/cupertino/jquery-ui-1.9.1.custom.css" rel="stylesheet">
+  <style>
+    body {
+      width: 250px;
+    }
+    #search {
+    }
+    #wrapper {
+      position: relative;
+      padding: 2px;
+    }
+    #searchLine {
+      padding: 5px;
+    }
+    #searchLine INPUT {
+      width: 100%;
+    }
+    #pane {
+      max-height: 30em;
+      padding: 2px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    #templates {
+      display: none;
+    }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color : blue;
+    }
+    .action {
+      float: right;
+      width: 16px;
+      height: 16px;
+    }
+    .line {
+      padding: 0px 3px 0px 3px;
+      border: 2px solid #CCCCFF;
+      border-radius:10px;
+    }
+    .selected {
+      border:2px solid blue;
+    }
+    div.bookmark {
+      margin-right : 16px;
+      white-space : nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+  <script src="js/jquery-1.8.2.js"></script>
+  <script src="js/jquery-ui-1.9.1.custom.js"></script>
+  <script src="settings.js"></script>
+  <script src="popup2.js"></script>
 <body>
 <div id="wrapper">
-	<div id="searchLine">
-		<form action="#" id="searchForm">
-			<input id="search" type="text" placeholder="Search your bookmarks" />
-		</form>
-	</div>
-	<div id="pane"><!-- pane for generated bookmarks-->
-	</div>
-	<div id="templates">
-		<div class="line">
-			<a class="action" href="#"><img src="img/delete.png"/></a>
-			<div class="bookmark">
-				<a href="http://www.sme.sk/"> sme aj tu aj tam aj inde a este treba just ale fakt dlhe, no fakt </a>
-			</div>
-		</div>
-	</div>
+  <div id="searchLine">
+    <form action="#" id="searchForm">
+      <input id="search" type="text" placeholder="Search your bookmarks" />
+    </form>
+  </div>
+  <div id="pane"><!-- pane for generated bookmarks-->
+  </div>
+  <div id="templates">
+    <div class="line">
+      <a class="action" href="#"><img src="img/delete.png"/></a>
+      <div class="bookmark">
+        <a href="http://www.sme.sk/"> sme aj tu aj tam aj inde a este treba just ale fakt dlhe, no fakt </a>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 <html>

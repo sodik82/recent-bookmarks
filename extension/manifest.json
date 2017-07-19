@@ -20,5 +20,5 @@
    "name": "Recent Bookmarks",
    "options_page": "options.html",
    "permissions": [ "bookmarks", "tabs", "storage" ],
-   "version": "0.6.2"
+   "version": "0.6.3"
 }
